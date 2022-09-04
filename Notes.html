@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+        background: palegreen;
+    }
+    #app{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,250px);
+        padding: 25px;
+        gap: 25px;
+    }
+    .note{
+        height: 200px;
+        box-sizing: border-box;
+        padding: 16px;
+        border: none;
+        border-radius: 10px ;
+    }
+    .add-note{
+        height: 200px;
+        border: none;
+        outline: none;
+        background:rgba(0,0,0,0.1);
+        border-radius: 10px;
+        font-size: 120px;
+        color: rgba(0,0,0,0.5);
+        cursor: pointer;
+
+    }
+    /* Add a black background color to the top navigation */
+    .topnav {
+        background-color: slategrey;
+        overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: greenyellow;
+        color: slategrey;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+</style>
+
+<body>
+<div class="container">
+<div class="topnav">
+    <a href="Board.html">INTRO</a>
+    <a href="Example.html">Example of Node.js</a>
+    <a href="Coversation.html">Conversation</a>
+    <a href="Tips.html">Tips & tricks</a>
+    <a href="Quizzes.html">Quizzes</a>
+    <a href="Notes.html" class="active">Notes</a>
+</div>
+</div>
+<div id="app">
+<textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+    <textarea class="note">Some sample text</textarea>
+
+    <button class="add-note" type="button">+</button>
+</div>
+</body>
+</html>
